@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 df = pd.read_csv("data/raw/abalone_raw.csv")
 target = pd.read_csv("data/raw/abalone_target_raw.csv")
