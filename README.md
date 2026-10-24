@@ -17,3 +17,14 @@ Objetivo: predecir edad del molusco Abalón
 - `src/`: Código fuente para preprocesamiento y modelado.
 - `results/`: Métricas y registro de experimentos.
 - `models/`: Modelos entrenados serializados.
+
+## Ejecución del Preprocesamiento
+
+Para limpiar los datos originales, sigue estos pasos:
+
+1) Abre tu terminal.
+2) Asegúrate de tener activado el entorno virtual (ejecutando `conda activate abalone_env`).
+3) Verifica que estás posicionado en la carpeta principal del proyecto (`abalone_project`).
+4) Ejecuta el script de preprocesamiento ingresando este comando y presionando Enter:
+   `python src/preprocess.py`
+
