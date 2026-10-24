@@ -20,9 +20,7 @@ for col in columnas:
 
     lim_inf = Q1 - 1.5 * IQR
     lim_sup = Q3 + 1.5 *IQR
-    outliers = df[(df[col] < lim_inf) | (df[col] > lim_sup)]
-
-    print(col, "Valores atípicos:", len(outliers))
+    df = df[(df[col] >= lim_inf) & (df[col] <= lim_sup)]
 
 df.to_csv("data/processed/abalone_clean.csv", index=False)
 print("Dataset procesado correctamente y guardado")
