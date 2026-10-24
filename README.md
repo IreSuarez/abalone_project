@@ -37,5 +37,45 @@ Para entrenar el modelo, sigue estos pasos:
 3) Verifica que estás posicionado en la carpeta principal del proyecto (`abalone_project`).
 4) Ejecuta el script del preprocesamiento ingresando este comando y presionando Eter: `python src/preprocess.py`
 
-## Resultados
-- **El RandomForest modificando el hiperparametro (max_depth=5) obtuvo las métricas:** MAE: 1.2091, RMSE: 1.6028, R2: 0.5385
+
+## Resultados Modelos
+**V1:**
+
+El Random Forest conb max_depth=None obtuvo los siguientes resultados:
+
+MAE: 1.2155
+
+RMSE: 1.6161
+
+R2: 0.5309
+
+**V2:**
+
+El Random Forest con max_depth=15 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+
+MAE: 1.2171
+
+RMSE: 1.6195
+
+R2: 0.5289
+
+**V3:**
+
+El Random Forest con max_depth=10 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+
+MAE: 1.1972
+
+RMSE: 1.6008
+
+R2: 0.5397
+
+**V4:**
+
+El Random Forest con max_depth=5 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+
+MAE: 1.2091
+
+RMSE: 1.6028
+
+R2: 0.5385
+
