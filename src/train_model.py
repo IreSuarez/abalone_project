@@ -10,6 +10,11 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
+MODEL_VERSION = "v1"
+SEED = 42
+HIPERPARAMETERS = {"algorithm": "RandomForestRegressor", "n_estimators": 100}
+
+
 df = pd.read_csv("data/processed/abalone_clean.csv")
 X = df.drop(columns=['Age', 'Rings'])
 y = df['Age']
@@ -44,8 +49,16 @@ with open("results/metrics_v1.json", "w") as f:
     json.dump(metrics_data, f, indent=4)
 
 log_file = "results/experiments_log.csv"
+exp_id = "exp_01"
+if os.path.exists(log_file):
+    log_df = pd.read_csv(log_file,sep=',')
+    if not log_df.empty:
+        exp_id = log_df.iloc[-1]['experiment_id']
+        exp_id = int(exp_id.split('_')[-1]) + 1
+        exp_id = f"exp_{exp_id:02d}" 
+
 log_data = pd.DataFrame([{
-    "experiment_id": "exp_01",
+    "experiment_id": exp_id,
     "datetime": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
     "model_version": "v1",
     "hyperparameters": "RandomForest(n_estimators=100, random_state=42)",
@@ -53,7 +66,7 @@ log_data = pd.DataFrame([{
 }])
 
 if not os.path.exists(log_file):
-    log_data.to_csv(log_file, index=False)
+    log_data.to_csv(log_file, index=False,header=True)
 else:
     log_data.to_csv(log_file, mode='a', header=False, index=False)
 
