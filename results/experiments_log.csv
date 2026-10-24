@@ -1,3 +1,4 @@
 experiment_id,datetime,model_version,hyperparameters,metrics
 exp_01,2026-10-24 10:32:51,v1,"RandomForest(n_estimators=100, random_state=42)","MAE: 1.22, RMSE: 1.62, R2: 0.53"
 exp_02,2026-10-24 10:33:20,v1,"RandomForest(n_estimators=100, random_state=42)","MAE: 1.22, RMSE: 1.62, R2: 0.53"
+exp_03,2026-10-24 11:32:09,v2,"RandomForest(n_estimators=100, random_state=42,max_depth=15)","MAE: 1.22, RMSE: 1.62, R2: 0.53"
