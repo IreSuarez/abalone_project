@@ -4,7 +4,7 @@
     "hyperparameters": {
         "algorithm": "RandomForestRegressor",
         "n_estimators": 100,
-        "max_dept": 15
+        "max_depth": 15
     },
     "metrics": {
         "MAE": 1.2171,
