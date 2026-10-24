@@ -38,11 +38,10 @@ Para entrenar el modelo, sigue estos pasos:
 4) Ejecuta el script del preprocesamiento ingresando este comando y presionando Eter: `python src/preprocess.py`
 
 
-
 ## Resultados Modelos
 **V1:**
 
-El Random Forest con max_depth=10 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+El Random Forest conb max_depth=None obtuvo los siguientes resultados:
 
 MAE: 1.2155
 
@@ -69,3 +68,14 @@ MAE: 1.1972
 RMSE: 1.6008
 
 R2: 0.5397
+
+**V4:**
+
+El Random Forest con max_depth=5 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+
+MAE: 1.2091
+
+RMSE: 1.6028
+
+R2: 0.5385
+
