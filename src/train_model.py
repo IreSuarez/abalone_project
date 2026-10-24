@@ -10,11 +10,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
-MODEL_VERSION = "v1"
-SEED = 42
-HIPERPARAMETERS = {"algorithm": "RandomForestRegressor", "n_estimators": 100}
-
-
 df = pd.read_csv("data/processed/abalone_clean.csv")
 X = df.drop(columns=['Age', 'Rings'])
 y = df['Age']
