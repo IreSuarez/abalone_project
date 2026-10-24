@@ -36,3 +36,6 @@ Para entrenar el modelo, sigue estos pasos:
 2) Asegúrate de tener activado el entorno virtual (ejecutando `conda activate abalone_env`).
 3) Verifica que estás posicionado en la carpeta principal del proyecto (`abalone_project`).
 4) Ejecuta el script del preprocesamiento ingresando este comando y presionando Eter: `python src/preprocess.py`
+
+## Resultados
+- **El RandomForest modificando el hiperparametro (max_depth=5) obtuvo las métricas:** MAE: 1.2091, RMSE: 1.6028, R2: 0.5385
