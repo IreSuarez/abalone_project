@@ -40,6 +40,9 @@ Para entrenar el modelo, sigue estos pasos:
 ## Resultados
 
 El Random Forest con max_depth=15 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+
 MAE: 1.2171
+
 RMSE: 1.6195
+
 R2: 0.5289
