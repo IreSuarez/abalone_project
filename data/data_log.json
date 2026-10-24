@@ -1,0 +1,10 @@
+{
+    "version" : "v1",
+    "created_at" : "2026-10-23",
+    "source" : "data/raw/abalone_raw.csv",
+    "transformations": [
+        "added derived feature 'age = rings +1.5",
+        "encoded sex with one-hot encoding (Sex_F, Sex_I, Sex_M)",
+        "removed outliers using IQR method for all numeric columns"
+    ]
+}
