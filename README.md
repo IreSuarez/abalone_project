@@ -36,3 +36,10 @@ Para entrenar el modelo, sigue estos pasos:
 2) Asegúrate de tener activado el entorno virtual (ejecutando `conda activate abalone_env`).
 3) Verifica que estás posicionado en la carpeta principal del proyecto (`abalone_project`).
 4) Ejecuta el script del preprocesamiento ingresando este comando y presionando Eter: `python src/preprocess.py`
+
+## Resultados
+
+El Random Forest con max_depth=15 tiene un desempeño similar al de max_depth=None que se probó (model_v1) con:
+MAE: 1.2171
+RMSE: 1.6195
+R2: 0.5289
